@@ -1,0 +1,74 @@
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --accent: #555555;
+    --light-grey: #f4f4f4;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    align-items: center;
+}
+
+.logo { font-weight: bold; font-size: 1.5rem; letter-spacing: 2px; }
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.placeholder-img {
+    background: #e0e0e0;
+    height: 500px;
+    width: 100%;
+}
+
+.features-grid {
+    padding: 5rem 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    border: 1px solid #eee;
+    padding: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.feature-card:hover { border-color: var(--text); }
+
+.feature-detail {
+    display: none;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+.cta-footer {
+    background: var(--light-grey);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--text);
+    color: white;
+    text-decoration: none;
+    margin-top: 1rem;
+}
