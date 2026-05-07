@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Essentials | Premium Minimalism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">AURA</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>AURA Essentials</h1>
+            <p>Elevated basics for the modern wardrobe. Quality without compromise.</p>
+            <a href="#features" class="btn-primary">Explore Features</a>
+        </div>
+        <div class="hero-image">
+            <!-- Replace with actual product photography -->
+            <div class="placeholder-img"></div>
+        </div>
+    </header>
+
+    <section id="features" class="features-grid">
+        <div class="feature-card" onclick="toggleDetail('feat1')">
+            <h3>Sustainable Fabric</h3>
+            <p>Sourced from 100% organic materials.</p>
+            <div id="feat1" class="feature-detail">
+                <p>Our fabrics are GOTS certified, ensuring ethical production from seed to garment. Breathable, durable, and kind to the planet.</p>
+            </div>
+        </div>
+        <div class="feature-card" onclick="toggleDetail('feat2')">
+            <h3>Precision Tailoring</h3>
+            <p>Designed for the perfect silhouette.</p>
+            <div id="feat2" class="feature-detail">
+                <p>Every seam is reinforced. We use anatomical mapping to ensure the fit remains consistent wash after wash.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cta-footer">
+        <p>Ready to elevate your style?</p>
+        <a href="contact.html" class="btn-cta">Get in Touch</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
